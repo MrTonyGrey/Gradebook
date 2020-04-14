@@ -43,7 +43,7 @@ VALUES 	(1,'Grey','Tony','tonygrey@gmail.com'),
         (3,'Wizard','Grand','grandwizard@theorganization.org'),
         (4,'Butter','DippedIn','dipped@crablegs.net'),
         (5,'Clues','Blues','blue@nickelodeon.com'),
-        (6,'Fairy','Tooth', 'tfairy@fantasy.com'),
+        (6,'Doctor','Quack', 'qdocter@fantasy.com'),
         (7,'Bravo','Captain','cbravo@brenkin.com');        
 UNLOCK TABLES;
 

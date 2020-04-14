@@ -1,4 +1,19 @@
 How to compile:
+-Go to mySQL.com
+-Download mySQL Community Server
+-Download DMG Archive
+-Download mySQL Workbench
+-Add mySQL to your path
+echo 'export PATH="/usr/local/mysql/bin:$PATH"'>>~/.bash_profile
+-Create password for mySQL and log in
+-Crete user in mySQL
+mysql> CREATE USER '<insert username>'@localhost'
+mysql> SELECT user, host FROM mysql.user;
+mysql> CREATE USER '<insert username>'@localhost' IDENTIFIED BY '<insert password>';
+mysql> GRANT ALL PRIVILEGES ON *.* TO '<insert username>'@'localhost';
+-Create database
+mysql> CREATE DATABASE gradebook;
+mysql> USE gradebook;
 
 -Download Visual Studio Code
 -Run npm init to initialize package.json

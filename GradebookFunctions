@@ -71,15 +71,15 @@ SET points = points + 2
 WHERE assign_id = 9;
 
 -- TASK 10 QUERY
--- Add 2 points just to those students whose last name contains a ‘Q’.
+-- Add 2 points just to those students whose first name contains a ‘Q’.
 UPDATE student_scores
 SET points = points + 2
-WHERE assign_id = 34
+WHERE assign_id = 5
 	AND student_id = 
     (
 		SELECT student_id 
 		FROM students
-		WHERE lname LIKE '%Q%'
+		WHERE fname LIKE '%Q%'
 	);
 
 -- TASK 11 QUERY

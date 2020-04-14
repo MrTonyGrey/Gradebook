@@ -1,12 +1,13 @@
 How to compile:
+
 -Go to mySQL.com
 -Download mySQL Community Server
 -Download DMG Archive
 -Download mySQL Workbench
 -Add mySQL to your path
 echo 'export PATH="/usr/local/mysql/bin:$PATH"'>>~/.bash_profile
--Create password for mySQL and log in
--Crete user in mySQL
+-Create password for mysql and log in
+-Create user in mysql
 mysql> CREATE USER '<insert username>'@localhost'
 mysql> SELECT user, host FROM mysql.user;
 mysql> CREATE USER '<insert username>'@localhost' IDENTIFIED BY '<insert password>';
@@ -14,6 +15,9 @@ mysql> GRANT ALL PRIVILEGES ON *.* TO '<insert username>'@'localhost';
 -Create database
 mysql> CREATE DATABASE gradebook;
 mysql> USE gradebook;
+
+-Login to mySQL Workbench
+-Insert code into mySQL Workbench
 
 -Download Visual Studio Code
 -Run npm init to initialize package.json
@@ -33,9 +37,9 @@ node index.js
 -Create variable called db
 const db = mysql.createConnection({
 host: 'localhost',
-user: <insert username>
-password: <insert password>
-database: <insert database>
+user: '<insert username>',
+password: '<insert password>',
+database: 'gradebook'
 -Create route using get
 app.get('/users', (req, res) => {
 const sql = 'SELECT * FROM users';

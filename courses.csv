@@ -1,0 +1,7 @@
+course_id,course_dept,course_num,course_name,semester,year
+1,English,20101,"English 104",Fall,2018
+2,Mathematics,30367,"Calculus 1",Spring,2017
+3,Computing,40351,"Operating Systems",Fall,2017
+4,"Hard Sciences",10236,"Genetics 1",Fall,2016
+5,"Soft Sciences",60245,Sociology,Spring,2018
+6,Theaters,50101,"Acting 101",Fall,2016
